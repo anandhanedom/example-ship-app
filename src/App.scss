@@ -1,0 +1,172 @@
+// ************************** VARIABLES **************************
+
+$primary: #fc6600;
+$secondary: #a4a4a4;
+// ************************** GENERIC **************************
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//Body font
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+// Pointer
+.pointer {
+  cursor: pointer;
+}
+
+.W-82 {
+  width: 82%;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.modal-header {
+  border-bottom: 0 none !important;
+}
+
+.modal-footer {
+  border-top: 0 none !important;
+}
+
+// ************************** BUTTONS **************************
+
+// Element focus outline none
+$input-btn-focus-box-shadow: none;
+$input-btn-focus-width: 0;
+
+// Primary buttons
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: lighten($primary, 32) !important;
+  color: $primary !important;
+  border: 0 !important;
+  border-radius: 7px !important;
+  outline: none !important;
+}
+
+.btn-primary:hover {
+  background-color: lighten($primary, 20) !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+.btn-danger,
+.btn-danger:active,
+.btn-danger:visited {
+  background-color: lighten(#fc0000, 37) !important;
+  color: #fc0000 !important;
+  border: 0 !important;
+  border-radius: 10px !important;
+  padding: 13px 26px !important;
+  min-width: 170px !important;
+}
+
+.btn-danger:hover {
+  background-color: lighten(#fc0000, 27) !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+// Primary buttons (action)
+.btn-primary.actionsBtn {
+  padding: 13px 26px !important;
+}
+
+// Primary buttons (accordion toggle)
+.btn-primary.infoToggleBtn {
+  padding: 7px 10px !important;
+}
+
+// Primary buttons (box accordion toggle)
+.btn-primary.boxToggleBtn {
+  padding: 3px 10px !important;
+  height: 35px;
+}
+
+// ************************** SEARCH BOX **************************
+
+// Search component
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search {
+  .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+}
+
+// ************************** SIDENAV **************************
+
+.sidenavLinks {
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+  color: $secondary;
+
+  &:hover {
+    color: black;
+  }
+}
+
+// ************************** ACCORDIONS **************************
+
+// Box title
+.boxTitle {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.boxTitle::after {
+  content: "";
+  flex: 1;
+  margin-left: 1rem;
+  height: 1px;
+  background-color: $primary;
+}
+
+// ************************** HEADER **************************
+
+//Header Logo
+.logo {
+  font-size: 1.5rem;
+  .logo1 {
+    font-weight: 1000;
+  }
+  .logo2 {
+    font-weight: lighter;
+  }
+}
+
+.main-nav-header {
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.125);
+}
+
+.nav-link.active {
+  background-color: lighten($primary, 32) !important;
+  color: $primary !important;
+}
+
+@import "~bootstrap/scss/bootstrap";
