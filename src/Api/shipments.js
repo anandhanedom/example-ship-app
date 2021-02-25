@@ -1,7 +1,7 @@
 export const getShipments = () => [
   {
     waybill: "203481267",
-    status: "created",
+    status: "In Transit",
     requestedPickupDate: "2021-02-19",
     requestedPickupTimeSlot: {
       startTime: "08:30am",
@@ -51,7 +51,7 @@ export const getShipments = () => [
     handoverMode: "pickup",
     noOfBoxes: 0,
     paymentInfo: {
-      paymentMode: "PREPAID",
+      paymentMode: "Prepaid",
       totalAmount: "string",
       collectableAmount: "string",
       currencyCode: "INR",
@@ -81,7 +81,7 @@ export const getShipments = () => [
   },
   {
     waybill: "203481267",
-    status: "created",
+    status: "In Transit",
     requestedPickupDate: "2021-02-19",
     requestedPickupTimeSlot: {
       startTime: "08:30am",
@@ -131,7 +131,7 @@ export const getShipments = () => [
     handoverMode: "pickup",
     noOfBoxes: 0,
     paymentInfo: {
-      paymentMode: "PREPAID",
+      paymentMode: "Prepaid",
       totalAmount: "string",
       collectableAmount: "string",
       currencyCode: "INR",
@@ -161,7 +161,7 @@ export const getShipments = () => [
   },
   {
     waybill: "203481267",
-    status: "created",
+    status: "In Transit",
     requestedPickupDate: "2021-02-19",
     requestedPickupTimeSlot: {
       startTime: "08:30am",
@@ -211,7 +211,7 @@ export const getShipments = () => [
     handoverMode: "pickup",
     noOfBoxes: 0,
     paymentInfo: {
-      paymentMode: "PREPAID",
+      paymentMode: "Prepaid",
       totalAmount: "string",
       collectableAmount: "string",
       currencyCode: "INR",
@@ -241,7 +241,7 @@ export const getShipments = () => [
   },
   {
     waybill: "203481267",
-    status: "created",
+    status: "In Transit",
     requestedPickupDate: "2021-02-19",
     requestedPickupTimeSlot: {
       startTime: "08:30am",
@@ -291,7 +291,7 @@ export const getShipments = () => [
     handoverMode: "pickup",
     noOfBoxes: 0,
     paymentInfo: {
-      paymentMode: "PREPAID",
+      paymentMode: "Prepaid",
       totalAmount: "string",
       collectableAmount: "string",
       currencyCode: "INR",
@@ -321,7 +321,7 @@ export const getShipments = () => [
   },
   {
     waybill: "203481267",
-    status: "created",
+    status: "In Transit",
     requestedPickupDate: "2021-02-19",
     requestedPickupTimeSlot: {
       startTime: "08:30am",
@@ -371,7 +371,7 @@ export const getShipments = () => [
     handoverMode: "pickup",
     noOfBoxes: 0,
     paymentInfo: {
-      paymentMode: "PREPAID",
+      paymentMode: "Prepaid",
       totalAmount: "string",
       collectableAmount: "string",
       currencyCode: "INR",
@@ -403,7 +403,7 @@ export const getShipments = () => [
 
 export const getShipmentByWaybillNumber = waybillNumber => ({
   waybill: waybillNumber,
-  status: "created",
+  status: "In Transit",
   requestedPickupDate: "24 December 2020",
   requestedPickupTimeSlot: {
     startTime: "08:30am",
@@ -453,7 +453,7 @@ export const getShipmentByWaybillNumber = waybillNumber => ({
   handoverMode: "pickup",
   noOfBoxes: 3,
   paymentInfo: {
-    paymentMode: "PREPAID",
+    paymentMode: "Prepaid",
     totalAmount: "string",
     collectableAmount: "string",
     currencyCode: "INR",

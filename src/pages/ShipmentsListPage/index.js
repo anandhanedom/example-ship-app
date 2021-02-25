@@ -23,7 +23,7 @@ const ShipmentsListPage = () => {
       label: "Shipment ID",
       customCellRender: row => (
         <Badge>
-          <p>{row.waybill}</p>
+          <p className="highlighted-text">#{row.waybill}</p>
         </Badge>
       ),
     },
@@ -32,50 +32,66 @@ const ShipmentsListPage = () => {
       label: "Order Type and Status",
       customCellRender: row => (
         <Badge>
-          <p className="d-flex">
+          <p className="d-flex  ">
             {row.shipmentType === "forward" ? (
-              <i className="fas fa-caret-right fa-2x mr-2"></i>
+              <i className="fas fa-caret-right mr-2"></i>
             ) : null}
             <span className="align-self-baseline">{row.status}</span>
           </p>
         </Badge>
       ),
+      options: {
+        align: "center",
+      },
     },
     {
       name: "payment",
       label: "Payment",
       customCellRender: row => (
         <Badge>
-          <p>{row.paymentInfo.paymentMode}</p>
+          <p className=" ">{row.paymentInfo.paymentMode}</p>
         </Badge>
       ),
+      options: {
+        align: "center",
+      },
     },
     {
       name: "pickupDetails",
       label: "Pickup Details",
       customCellRender: row => (
         <Badge>
-          <p>{row.pickupPOC.name}</p>
-          <p>
-            {row.requestedPickupDate}, {row.requestedPickupTimeSlot.startTime} -{" "}
-            {row.requestedPickupTimeSlot.endTime}
+          <p className="text-left">
+            <p>{row.pickupPOC.name}</p>
+            <p>
+              {row.requestedPickupDate}, {row.requestedPickupTimeSlot.startTime}{" "}
+              - {row.requestedPickupTimeSlot.endTime}
+            </p>
           </p>
         </Badge>
       ),
+      options: {
+        align: "left",
+      },
     },
     {
       name: "dropDetails",
       label: "Drop Details",
       customCellRender: row => (
         <Badge>
-          <p>{row.deliveryPOC.name}</p>
-          <p>
-            {row.requestedDeliveryDate},{" "}
-            {row.requestedDeliveryTimeSlot.startTime} -{" "}
-            {row.requestedDeliveryTimeSlot.endTime}
+          <p className="text-left">
+            <p>{row.deliveryPOC.name}</p>
+            <p>
+              {row.requestedDeliveryDate},{" "}
+              {row.requestedDeliveryTimeSlot.startTime} -{" "}
+              {row.requestedDeliveryTimeSlot.endTime}
+            </p>
           </p>
         </Badge>
       ),
+      options: {
+        align: "left",
+      },
     },
     {
       name: "overlay",

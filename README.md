@@ -1,2 +1,2 @@
 # shippingApp
-Shiiping app snippets
+Shipping app snippets
