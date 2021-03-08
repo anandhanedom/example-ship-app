@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-// Bootstrap
+// Bootstrap accordion
 import { Accordion } from "react-bootstrap";
 
 const AccordionToggleBtn = ({ eventKey }) => {
