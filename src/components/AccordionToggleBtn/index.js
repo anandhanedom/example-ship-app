@@ -8,10 +8,11 @@ const AccordionToggleBtn = ({ eventKey }) => {
 
   return (
     <Accordion.Toggle
-      className="btn-primary boxToggleBtn"
+      className="btn-primary boxToggleBtns"
       variant="link"
       eventKey={eventKey}
-      onClick={() => setOpen(!open)}>
+      onClick={() => setOpen(!open)}
+    >
       <i className={`fas fa-chevron-down ${open ? "rotate" : null}`}></i>
     </Accordion.Toggle>
   );
